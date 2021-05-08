@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="styles.css"rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="hero">
+		<div id="clock">8:10:45</div>
+	<script>
+		setInterval(showTime, 1000);
+		function showTime() {
+			let time = new Date();
+			let hour = time.getHours();
+			let min = time.getMinutes();
+			let sec = time.getSeconds();
+			am_pm = "AM";
+  
+			if (hour > 12) {
+				hour -= 12;
+				am_pm = "PM";
+			}
+			if (hour == 0) {
+				hr = 12;
+				am_pm = "AM";
+			}
+  
+			hour = hour < 10 ? "0" + hour : hour;
+			min = min < 10 ? "0" + min : min;
+			sec = sec < 10 ? "0" + sec : sec;
+  
+			let currentTime = hour + ":" 
+				+ min + ":" + sec + am_pm;
+  
+			document.getElementById("clock")
+				.innerHTML = currentTime;
+		}
+  
+		showTime();
+	</script>
+<div class="boy">
+  <img src=https://th.bing.com/th/id/R3160f076efd0260cf8b01b736830466c?rik=MzGUoRfuO0gP%2fg&riu=http%3a%2f%2fwww.therenewalproject.com%2fwp-content%2fuploads%2f2019%2f04%2fYear-Up1-1400x787.jpg&ehk=qu3EV1w1xm7ppdujGQ922ruas%2bhiCQB9Gdl50F0Smq4%3d&risl=&pid=ImgRaw>
+</div>
+<div class="box">
+  <p>Year Up's mission is to close the Opportunity Divide by ensuring that young adults gain
+the skills, experiences, and support that will empower them to reach their potential
+through careers and higher education.</p>
+</div>
+  <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#About">About</a></l>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.yearup.org/students/become-a-student">Apply</a></li>
+  </ul>
+</body>
+
+</html>
